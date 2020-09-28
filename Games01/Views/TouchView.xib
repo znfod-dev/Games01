@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TouchView" customModule="Games01" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePs-HI-bRN">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdU-jH-XNr">
+                    <rect key="frame" x="35" y="35" width="80" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="4DI-Uw-28b"/>
+                        <constraint firstAttribute="width" constant="80" id="eDU-a4-SYf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ePs-HI-bRN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AsV-XC-mxR"/>
+                <constraint firstItem="fdU-jH-XNr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JVH-Ms-t7M"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ePs-HI-bRN" secondAttribute="bottom" id="ONc-RI-EGB"/>
+                <constraint firstItem="fdU-jH-XNr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="W3t-wf-XYz"/>
+                <constraint firstItem="ePs-HI-bRN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tVO-Xo-CDU"/>
+                <constraint firstAttribute="trailing" secondItem="ePs-HI-bRN" secondAttribute="trailing" id="wbG-3F-Mgg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="ePs-HI-bRN" id="hD5-1O-bVo"/>
+                <outlet property="fingerView" destination="fdU-jH-XNr" id="9p9-PL-taK"/>
+            </connections>
+            <point key="canvasLocation" x="376.81159420289856" y="-143.30357142857142"/>
+        </view>
+    </objects>
+</document>
