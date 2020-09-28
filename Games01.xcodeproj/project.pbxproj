@@ -16,6 +16,8 @@
 		9B336EC0251CCF9A00D2E86A /* touch.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B336EBF251CCF9A00D2E86A /* touch.json */; };
 		9B336EC3251CE22600D2E86A /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B336EC2251CE22600D2E86A /* UIColor+Extentions.swift */; };
 		9B336EC6251D693F00D2E86A /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B336EC5251D693F00D2E86A /* TouchView.swift */; };
+		9BEEDC5F25220199000E3173 /* boom.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BEEDC5E25220199000E3173 /* boom.json */; };
+		9BEEDC622522019E000E3173 /* firework.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BEEDC612522019E000E3173 /* firework.json */; };
 		AB0341D601401F7541AF83DA /* Pods_Games01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8FD251B90FE3D09C424F0 /* Pods_Games01.framework */; };
 		D04F15D6251D783500E88182 /* timer.json in Resources */ = {isa = PBXBuildFile; fileRef = D04F15D5251D783500E88182 /* timer.json */; };
 		D04F15D9251D7AEE00E88182 /* countdown.json in Resources */ = {isa = PBXBuildFile; fileRef = D04F15D8251D7AEE00E88182 /* countdown.json */; };
@@ -46,6 +48,8 @@
 		9B336EBF251CCF9A00D2E86A /* touch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = touch.json; sourceTree = "<group>"; };
 		9B336EC2251CE22600D2E86A /* UIColor+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extentions.swift"; sourceTree = "<group>"; };
 		9B336EC5251D693F00D2E86A /* TouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
+		9BEEDC5E25220199000E3173 /* boom.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boom.json; sourceTree = "<group>"; };
+		9BEEDC612522019E000E3173 /* firework.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = firework.json; sourceTree = "<group>"; };
 		BDDE6EC340EABFFCCA1D8B55 /* Pods-Games01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Games01.debug.xcconfig"; path = "Target Support Files/Pods-Games01/Pods-Games01.debug.xcconfig"; sourceTree = "<group>"; };
 		D04F15D5251D783500E88182 /* timer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timer.json; sourceTree = "<group>"; };
 		D04F15D8251D7AEE00E88182 /* countdown.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countdown.json; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		9B336EBE251CCF7300D2E86A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9BEEDC612522019E000E3173 /* firework.json */,
+				9BEEDC5E25220199000E3173 /* boom.json */,
 				D08CB857251DBCA500830694 /* blackWave.json */,
 				D08CB854251DBCA500830694 /* blueWave.json */,
 				D08CB856251DBCA500830694 /* brownWave.json */,
@@ -228,6 +234,7 @@
 				D08CB85D251DBCA500830694 /* greenWave.json in Resources */,
 				9B336EAE251CCC7A00D2E86A /* LaunchScreen.storyboard in Resources */,
 				9B336EC0251CCF9A00D2E86A /* touch.json in Resources */,
+				9BEEDC622522019E000E3173 /* firework.json in Resources */,
 				9B336EAB251CCC7A00D2E86A /* Assets.xcassets in Resources */,
 				D04F15D9251D7AEE00E88182 /* countdown.json in Resources */,
 				D08CB85F251DBCA500830694 /* blackWave.json in Resources */,
@@ -237,6 +244,7 @@
 				D04F15D6251D783500E88182 /* timer.json in Resources */,
 				D08CB862251DBCA500830694 /* redWave.json in Resources */,
 				D08CB861251DBCA500830694 /* yellowWave.json in Resources */,
+				9BEEDC5F25220199000E3173 /* boom.json in Resources */,
 				9B336EA9251CCC7800D2E86A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,6 +50,7 @@ class TouchView: UIView {
     var touchHashValue:Int = 0
     
     var lottieView:AnimationView!
+    var boomLottieView:AnimationView!
     var waveColor:WaveColor = WaveColor.Black
     
     override func awakeFromNib() {
@@ -77,7 +78,7 @@ class TouchView: UIView {
         
         let waveColor = self.waveColor.wave
         lottieView = AnimationView(name: waveColor)
-        lottieView.frame = self.bounds
+        lottieView.frame = CGRect(x: 50, y: 50, width: self.bounds.width-100, height: self.bounds.height-100)
         lottieView.backgroundColor = .clear
         lottieView.isHidden = true
         lottieView.animationSpeed = 3
@@ -92,5 +93,22 @@ class TouchView: UIView {
         if !lottieView.isAnimationPlaying {
             lottieView.play()
         }
+    }
+    func stopLottie() {
+        lottieView.isHidden = true
+        self.lottieView.removeFromSuperview()
+        self.lottieView = nil
+    }
+    
+    func playBoom() {
+        stopLottie()
+        boomLottieView = AnimationView(name: "boom")
+        boomLottieView.frame = self.bounds
+        boomLottieView.backgroundColor = .clear
+        boomLottieView.animationSpeed = 1
+        boomLottieView.loopMode = .loop
+        
+        self.addSubview(boomLottieView)
+        boomLottieView.play()
     }
 }
