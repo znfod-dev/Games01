@@ -52,11 +52,11 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            let vc = CameraVC.instance()
-            self.present(vc, animated: true, completion: nil)
+//            let vc = CameraVC.instance()
+//            self.present(vc, animated: true, completion: nil)
         } else if indexPath.row == 1 {
-            let vc = ContentVC.instance()
-            self.present(vc, animated: true, completion: nil)
+//            let vc = ContentVC.instance()
+//            self.present(vc, animated: true, completion: nil)
         } else if indexPath.row == 2 {
             
         } else if indexPath.row == 3 {
@@ -64,6 +64,8 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource {
         } else if indexPath.row == 4 {
             
         }
+        let vc = ContentVC.instance()
+        self.present(vc, animated: true, completion: nil)
     }
 }
 
