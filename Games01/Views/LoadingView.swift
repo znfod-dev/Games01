@@ -10,6 +10,7 @@ import Lottie
 
 protocol LoadingViewDelegate: class {
     func startBtnClicked()
+    func endBtnClicked()
 }
 
 
@@ -72,10 +73,13 @@ class LoadingView: UIView {
     }
     
     @IBAction func startBtn(_ sender: Any) {
-        
         self.delegate?.startBtnClicked()
     }
     
+    
+    @IBAction func endBtn(_ sender: Any) {
+        self.delegate?.endBtnClicked()
+    }
     
     
 }

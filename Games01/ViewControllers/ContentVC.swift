@@ -9,6 +9,12 @@ import UIKit
 import Lottie
 
 class ContentVC: UIViewController {
+
+    static func instance() -> ContentVC {
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ContentVC") as! ContentVC
+        return vc
+    }
+    
     
     @IBOutlet weak var cntLbl: UILabel!
     
@@ -35,6 +41,7 @@ class ContentVC: UIViewController {
         
     }
     
+    
     func initUI() {
         self.loadingView = LoadingView.loadFromNibNamed(nibNamed: "LoadingView") as? LoadingView
         self.loadingView.frame = self.view.frame
@@ -50,6 +57,20 @@ class ContentVC: UIViewController {
         self.countdown = resetCount
         self.cntLbl.text = "\(self.countdown)"
         self.cntLbl.isHidden = true
+    }
+    
+    override func viewWillLayoutSubviews() {
+        print("viewWillLayoutSubviews")
+        super.viewWillLayoutSubviews()
+    }
+    override func viewDidLayoutSubviews() {
+        print("viewDidLayoutSubviews")
+        super.viewDidLayoutSubviews()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("viewDidAppear")
+        super.viewDidAppear(animated)
     }
     
     func addTouchView(touches: Set<UITouch>) {
@@ -161,7 +182,6 @@ class ContentVC: UIViewController {
         
     }
     
-    
     @objc func limitCallback() {
         print("limitCallback")
         if self.countdown == 0 {
@@ -222,6 +242,9 @@ extension ContentVC: LoadingViewDelegate {
         self.loadingView.startTimer {
             self.isStarted = true
         }
+    }
+    func endBtnClicked() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

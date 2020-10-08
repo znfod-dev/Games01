@@ -24,9 +24,19 @@
                                 <action selector="startBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="NHw-dX-ae2"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izV-HW-oC3">
+                            <rect key="frame" x="118.5" y="354.5" width="83" height="81"/>
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="50"/>
+                            <state key="normal" title="END"/>
+                            <connections>
+                                <action selector="endBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Aol-W7-Bq9"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="izV-HW-oC3" firstAttribute="centerX" secondItem="Xtu-gW-zmo" secondAttribute="centerX" id="IfM-7u-6B1"/>
+                        <constraint firstItem="izV-HW-oC3" firstAttribute="top" secondItem="dmv-1s-9zI" secondAttribute="bottom" constant="30" id="mul-bd-S1T"/>
                         <constraint firstItem="dmv-1s-9zI" firstAttribute="centerY" secondItem="Xtu-gW-zmo" secondAttribute="centerY" id="x0k-KL-6aK"/>
                         <constraint firstItem="dmv-1s-9zI" firstAttribute="centerX" secondItem="Xtu-gW-zmo" secondAttribute="centerX" id="z0g-NL-BQp"/>
                     </constraints>
@@ -56,7 +66,7 @@
                 <outlet property="lottieView" destination="Lju-TA-zqo" id="FwT-Fw-NTf"/>
                 <outlet property="startBtn" destination="dmv-1s-9zI" id="S1Q-9E-mai"/>
             </connections>
-            <point key="canvasLocation" x="118.84057971014494" y="138.61607142857142"/>
+            <point key="canvasLocation" x="118.125" y="138.38028169014083"/>
         </view>
     </objects>
 </document>
